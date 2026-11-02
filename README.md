@@ -23,6 +23,8 @@
 
 要求：DSH `0.2.x`（Desktop 或 Web 均可），profile 里有 `plugin_manager`。
 
+> 想看一步一步的口令版（含排错表），直接看 [INSTALL.md](./INSTALL.md)。
+
 **方式 A：直接从 GitHub 装**
 
 ```
