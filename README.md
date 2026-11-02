@@ -43,6 +43,8 @@ plugin_manager
   target: /绝对路径/class-feedback
 ```
 
+> 国内网络提示：方式 A 由 pnpm 调用 git 拉取，而 git 不读系统代理。如果卡住不动，先执行 `git config --global http.proxy http://127.0.0.1:7890`（换成你自己的代理端口），或者直接用方式 B。
+
 装完**刷新一次页面**，侧边栏底部（设置齿轮上方）会出现一个气泡图标。
 
 ## 用法
