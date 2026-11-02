@@ -1,0 +1,47 @@
+{
+  "name": "dsh-plugin-class-feedback",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "把课堂纪要和老师的观察写成简短、自然、可直接发给家长的课后反馈。A DSH plugin that turns class notes into parent-ready feedback.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "education",
+    "feedback"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cuz0224/class-feedback.git"
+  },
+  "homepage": "https://github.com/Cuz0224/class-feedback#readme",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "license": "MIT"
+}
